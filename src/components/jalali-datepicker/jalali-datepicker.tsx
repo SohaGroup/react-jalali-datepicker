@@ -10,7 +10,7 @@ interface JalaliRangePickerProps extends RangePickerProps {}
 const DatePicker: any = generatePicker<Dayjs>(generateJalaliConfig);
 const RangePicker = DatePicker.RangePicker;
 
-const JalaliDatePicker: React.FC<JalaliDatePickerProps> & { RangePicker: React.FC<JalaliRangePickerProps> } = (props) => {
+export const JalaliDatePicker: React.FC<JalaliDatePickerProps> & { RangePicker: React.FC<JalaliRangePickerProps> } = (props) => {
   return <DatePicker {...props} />;
 };
 
@@ -18,5 +18,3 @@ JalaliDatePicker.RangePicker = (props) => {
   // You can use your additional props here
   return <RangePicker {...props} />;
 };
-
-export { JalaliDatePicker };
