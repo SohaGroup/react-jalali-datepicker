@@ -5,7 +5,7 @@ import { DatePickerProps, RangePickerProps } from "antd/es/date-picker";
 
 export interface JalaliDatePickerProps extends DatePickerProps {}
 
-interface JalaliRangePickerProps extends RangePickerProps {}
+export interface JalaliRangePickerProps extends RangePickerProps {}
 
 const DatePicker: any = generatePicker<Dayjs>(generateJalaliConfig);
 const RangePicker = DatePicker.RangePicker;

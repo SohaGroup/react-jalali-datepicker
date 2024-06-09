@@ -56,8 +56,8 @@ function App() {
           <ConfigProvider locale={locale} direction={direction}>
             <JalaliLocaleListener />
             <Space direction="vertical" size={12}>
-              <JalaliDatePicker direction="rtl" onChange={onOk} />
-              Jalali RangePicker: <JalaliDatePicker.RangePicker onChange={onOk} />
+              <JalaliDatePicker direction="rtl" onChange={onOk} showTime />
+              Jalali RangePicker: <JalaliDatePicker.RangePicker onChange={onOk} showTime />
               {/* <Calendar /> */}
             </Space>
           </ConfigProvider>

@@ -1,1 +1,1 @@
-export { JalaliDatePicker } from "./jalali-datepicker";
+export * from "./jalali-datepicker";

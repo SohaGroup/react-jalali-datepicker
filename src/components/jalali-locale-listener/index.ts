@@ -1,1 +1,1 @@
-export { JalaliLocaleListener } from "./jalali-locale-listener";
+export * from "./jalali-locale-listener";
