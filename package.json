@@ -1,11 +1,11 @@
 {
   "name": "soha",
   "private": false,
-  "version": "0.0.14",
+  "version": "0.0.15",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "yarn build:esm && yarn build:cjs",
+    "build": "yarn build:esm && yarn build:cjs && node fix-import-paths.cjs",
     "build:esm": "tsc",
     "build:cjs": "tsc --project tsconfig.cjs.json --outDir dist/cjs",
     "preview": "vite preview"
