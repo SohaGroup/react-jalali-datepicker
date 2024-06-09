@@ -2,7 +2,7 @@
   "name": "soha",
   "private": false,
   "version": "0.0.12",
-  "type": "module",
+  "type": "commonjs",
   "scripts": {
     "dev": "vite",
     "build": "yarn build:esm && yarn build:cjs",
